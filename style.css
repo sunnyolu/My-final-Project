@@ -1,14 +1,31 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body{
 background-color: black;
- }
 
+ }
+.menu ul {
+    display: inline flex;
+    margin: 50px;
+}
+
+.menu ul li {
+   display: inline-flex;
+   list-style: none;
+   margin: 0 20px;
+   color: #b2b1b1;
+   cursor: pointer;
+   text-transform: uppercase;
+   font-family: roboto;
+}
+ 
+.active{
+    color: crimson !important;
+}
 
 
 .slideshow{
@@ -23,6 +40,7 @@ height: 100vh;
 position: absolute;
 opacity: 0;
 animation: cycleimages 31s infinite;
+
 }
 
 .slideshow-item:nth-child(1){
@@ -73,6 +91,29 @@ margin-bottom: auto;
     letter-spacing: 1px;
     padding-bottom: 20px;
     }
+
+.text .cta {
+    background-color: transparent;
+    color: crimson;
+    display:  inline-block;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    font-family: roboto;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    letter-spacing: .1rem;
+    transition: .3s ease;
+    transition-property: background-color, color;
+
+   }
+
+   .text .cta:hover {
+        color: white;
+        background-color:crimson;
+    }
+
 
     @keyframes cycleimages{
        25%{
