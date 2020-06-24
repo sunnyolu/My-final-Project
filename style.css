@@ -130,9 +130,10 @@ margin-bottom: auto;
     transition-property: background-color, color;
    }
 
-  .cta:hover{
+  .cta a:hover{
         color: white;
         background-color:crimson;
+        transition: 5s ease;
     }
 
 
@@ -151,9 +152,10 @@ margin-bottom: auto;
         }
     }
 
-    @media screen and (max-width:768px){
+    @media screen and (max-width:858px){
         .nav-links li {
-            position: absolute;
+            position: fixed;
+            display: block;
             right: 0px;
             height: 92vh;
             top: 8vh;
